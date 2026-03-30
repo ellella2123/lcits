@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #0D0F12;
+  --bg-secondary: #12151A;
+  --accent: #00FF9F;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg-primary);
+  color: #E5E7EB;
+}
+
+.glass {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(12px);
+  border-radius: 12px;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: black;
+  border-radius: 12px;
+  padding: 10px 16px;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  box-shadow: 0 0 20px var(--accent);
+  transform: translateY(-2px);
+}
